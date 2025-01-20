@@ -1,59 +1,58 @@
 /* styles.css */
 body {
-    font-family: sans-serif; /* フォントは適切なものに変更してください */
-    margin: 0;
+  font-family: sans-serif; /* フォントは適切なものに変更してください */
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #fff, #f0f0f0); /* グラデーション */
 }
 
 .container {
-    display: flex;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
 }
 
-.left-column, .center-column, .right-column {
-    width: 33.33%;
-    padding: 20px;
-    box-sizing: border-box; /* paddingを含めたサイズにする */
+h2 {
+  color: #f00;
 }
 
-/* 左カラム */
-.left-column {
-    background-color: #f0f0f0; /* 薄いグレーの背景 */
+.title-wrapper {
+  background-image: repeating-linear-gradient(45deg, #f00, #f00 10px, #fff 10px, #fff 20px);
+  padding: 10px;
+  display: inline-block; /* 背景をテキスト幅に合わせる */
 }
 
-.left-column h2 {
-    color: #f00; /* 赤色の見出し */
+h3 {
+  border-bottom: 2px dotted #f00; /* 点線 */
 }
 
-.left-column ul {
-    list-style-type: disc; /* 黒丸 */
-    margin-left: 20px;
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
 }
 
-.left-column .small {
-    font-size: 12px;
+.small {
+  font-size: 12px;
 }
 
-/* 中央カラム */
-.center-column {
-    text-align: center;
-    background-color: #f9f9f9; /* さらに薄いグレーの背景 */
+.pink-box {
+  background-color: #f0f;
+  padding: 10px;
+  text-align: center;
+  margin: 20px 0; /* 上下マージン */
 }
 
-.center-column h2 {
-    color: #f00; /* 赤色の見出し */
-    margin-bottom: 0;
+.points {
+  display: inline-block;
+  background-color: #f0f;
+  border-radius: 50%; /* 円形に */
+  padding: 10px 20px;
 }
 
-.center-column p {
-    margin: 5px 0;
-}
-
-/* 右カラム */
-.right-column .pink-box {
-    background-color: #f0f; /* ピンク色の背景 */
-    padding: 10px;
-    text-align: center;
-}
-
-.right-column h3 {
-    margin-top: 20px;
+.section {
+  margin-bottom: 20px;
+  background-color: #fff; /* 各セクションの背景を白に */
+  padding: 10px;
+  border-radius: 5px;
 }
