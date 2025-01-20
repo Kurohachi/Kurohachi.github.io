@@ -1,83 +1,59 @@
 /* styles.css */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: sans-serif; /* フォントは適切なものに変更してください */
     margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
-}
-
-.header {
-    background-color: #0056b3;
-    color: #fff;
-    text-align: center;
-    padding: 20px 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.header h1 {
-    margin: 0;
-    font-size: 1.8rem;
 }
 
 .container {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    margin: 20px;
 }
 
-.column {
-    width: 30%;
-    background-color: #fff;
-    margin: 10px;
+.left-column, .center-column, .right-column {
+    width: 33.33%;
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    box-sizing: border-box; /* paddingを含めたサイズにする */
 }
 
-.content {
-    text-align: left;
+/* 左カラム */
+.left-column {
+    background-color: #f0f0f0; /* 薄いグレーの背景 */
 }
 
-h2 {
-    font-size: 1.4rem;
-    color: #0056b3;
-    margin-bottom: 15px;
+.left-column h2 {
+    color: #f00; /* 赤色の見出し */
 }
 
-p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 10px;
+.left-column ul {
+    list-style-type: disc; /* 黒丸 */
+    margin-left: 20px;
 }
 
-ul {
-    padding-left: 20px;
-    list-style-type: disc;
+.left-column .small {
+    font-size: 12px;
 }
 
-li {
-    margin-bottom: 8px;
-}
-
-.footer {
+/* 中央カラム */
+.center-column {
     text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    background-color: #f9f9f9; /* さらに薄いグレーの背景 */
 }
 
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
+.center-column h2 {
+    color: #f00; /* 赤色の見出し */
+    margin-bottom: 0;
+}
 
-    .column {
-        width: 90%;
-    }
+.center-column p {
+    margin: 5px 0;
+}
+
+/* 右カラム */
+.right-column .pink-box {
+    background-color: #f0f; /* ピンク色の背景 */
+    padding: 10px;
+    text-align: center;
+}
+
+.right-column h3 {
+    margin-top: 20px;
 }
